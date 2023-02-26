@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>KROMER????</title>
+<link href="bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<style>
+body {
+  font-family: "Comic Sans MS";
+  }
+  h1 {
+  font-size: 44px;
+  }
+  h1 {
+  color: #ff0000;
+}
+audio:not([controls]) {
+  display: none;
+}
+table, th, td {
+    border:5px #223B6A; padding: 15px; border-style: ridge; }
+	
+	body {
+    background:url(fundo.gif) repeat;
+  }
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+$(function() { // on document load
+    changer();
+});
+
+function changer() {
+    var idx = Math.floor(Math.random() * 100); 
+    $('#change').text(idx);
+    time = Math.floor(500 * Math.random())
+    setTimeout(changer,time);  // lather, rinse, repeat
+}
+</script>
+<script>
+function success() {
+	 if(document.getElementById("input01").value==="") { 
+            document.getElementById('button').disabled = true; 
+        } else { 
+            document.getElementById('button').disabled = false;
+        }
+    }
+    </script>
+<link rel="icon" href="spamdance.gif">
+</head>
+<body>
+<audio autoplay hidden loop>
+    <source src="3.mp3" type="audio/mpeg">
+  </audio>
+
+<div style="background-image:url(b1.png); background-repeat:repeat-x;width:auto;"> <a style="margin-left:30px;" href="Home.html"> <img src="b2.png" title="DEIXANDO?"> </a>  </div>
+
+<table style="width:100%">
+<tr>
+<td><a href="Sobremim.html">SOBRE MIM</a></td>
+<td><a href="paraiso.html">[PARAÍSO]</a></td>
+<td>FORMULÁRIO DE PEDIDO DE PIPIS</td>
+<td><a href="NFTs.html">NFTs & CRYPTOKROMER</a></td>
+<td><a href="CUNGADERO.html">CUNGADERO</a></td>
+<td><a href="AFILIADOS.html">AFILIADOS & AMIGOS</a></td>
+<td><a href="VISITAS.html">LIVRO DE VISITAS</a></td>
+</tr>
+</table>
+<marquee behavior="alternate"><a href="https://www.fangamer.com/products/deltarune-spamtons-specil-fun-pak"><img src="spamgifA4.gif" title="[PIPIS] VOCÊ É PANCE"></a></marquee>
+
+<div class="span3 offset3">
+        <fieldset>
+          <h3>	FORMULÁRIO DE PEDIDO DE PIPIS</h3>
+          <h5>TAXA DE PIPIS:<br>1 PIPIS = $<span id="change">#</span></h5>
+
+          <div class="control-group">
+            <label class="control-label" for="input01">NOME</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="input01" onkeyup="success()">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="select01">QUANTIDADE</label>
+            <div class="controls">
+              <select id="select01">
+                <option>1</option>
+                <option>12</option>
+                <option>50</option>
+                <option>100</option>
+                <option>200</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="multiSelect">ESTILO</label>
+            <div class="controls">
+              <select multiple="multiple" id="multiSelect">
+                <option>ORIGINAL</option>
+                <option>CHICANGO</option>
+                <option>Ms.</option>
+                <option>AMARELO</option>
+                <option>MIX</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary" id="button" disabled onclick="alert('ORDER PLACED')">ENVIAR</button>
+          </div>
+        </fieldset>
+    </div>   
+	
+	<div style="position: absolute; left: 480px; top: 520px;">
+	<marquee direction="down" height="230" behavior="alternate" scrollamount="2">
+    <img src="ovo1.png" width="100" alt="egg">
+	</marquee>
+</div>
+
+<div style="position: absolute; left: 640px; top: 520px;">
+	<marquee direction="down" height="230" behavior="alternate" scrollamount="9">
+    <img src="ovo2.png" alt="egg">
+    </marquee>
+</div>
+
+<div style="position: absolute; left: 770px; top: 490px;">
+	<marquee direction="down" height="260" behavior="alternate" scrollamount="4">
+    <img src="ovo3.png" alt="egg">
+    </marquee>
+</div>
+
+<div style="position: absolute; left: 920px; top: 460px;">
+	<marquee direction="down" height="290" behavior="alternate">
+    <img src="ovo4.png" alt="egg">
+    </marquee>
+</div>
+
+<div style="position: absolute; left: 1090px; top: 490px;">
+	<marquee direction="down" height="260" behavior="alternate" scrollamount="8">
+    <img src="ovo5.png" alt="egg">
+    </marquee>
+</div>
+
+<div style="position: absolute; left: 1320px; top: 490px;">
+	<marquee direction="down" height="260" behavior="alternate" scrollamount="11">
+    <img src="ovo6.png" alt="egg">
+    </marquee>
+</div>
+
+
+	<marquee behavior="scroll" direction="right">
+	<img src="pop1.gif" alt="popup">
+	<img src="pop2.gif" alt="popup">
+	<img src="pop3.gif" alt="popup">
+	<img src="pop4.gif" alt="popup">
+	<img src="pop5.gif" alt="popup">
+	<img src="pop6.gif" alt="popup">
+	<img src="pop7.gif" alt="popup">
+	<img src="pop8.gif" alt="popup">
+	<img src="pop9.gif" alt="popup">
+	<img src="pop10.gif" alt="popup">
+	</marquee>
+	
+</body>
+</html>
