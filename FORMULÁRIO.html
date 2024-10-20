@@ -23,7 +23,44 @@ table, th, td {
 	body {
     background:url(fundo.gif) repeat;
   }
+  
+.marquee-img {
+    display: block;
+    animation: marquee 10s linear infinite alternate;
+  }
 
+  @keyframes marquee {
+    from {
+      
+	  transform: translateX(calc(100vw - 600px)); /* ajuste conforme necessário */
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+ .marquee1-tiles {
+  display: flex;
+  overflow: hidden; /* Esconde os elementos que saem da área visível */
+  white-space: nowrap;
+}
+
+.marquee1-tiles img {
+  flex-shrink: 0; /* Evita que as imagens sejam redimensionadas */
+  margin-right: 10px; /* Espaçamento entre as imagens */
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(calc(-250vw));
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+  
+  
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>
@@ -67,9 +104,12 @@ function success() {
 <td><a href="VISITAS.html">LIVRO DE VISITAS</a></td>
 </tr>
 </table>
-<marquee behavior="alternate"><a href="https://www.fangamer.com/products/deltarune-spamtons-specil-fun-pak"><img src="spamgifA4.gif" title="[PIPIS] VOCÊ É PANCE"></a></marquee>
+<a href="https://www.fangamer.com/products/deltarune-spamtons-specil-fun-pak">
+    <img src="spamgifA4.gif" title="[PIPIS] VOCÊ É PANCE" class="marquee-img">
+</a>
 
-<div class="span3 offset3">
+
+<div class="span3 offset3" style="margin-bottom: 80px;">
         <fieldset>
           <h3>	FORMULÁRIO DE PEDIDO DE PIPIS</h3>
           <h5>TAXA DE PIPIS:<br>1 PIPIS = $<span id="change">#</span></h5>
@@ -106,7 +146,7 @@ function success() {
             <button type="submit" class="btn btn-primary" id="button" disabled onclick="alert('ORDER PLACED')">ENVIAR</button>
           </div>
         </fieldset>
-    </div>   
+	</div>   
 	
 	<div style="position: absolute; left: 480px; top: 520px;">
 	<marquee direction="down" height="230" behavior="alternate" scrollamount="2">
@@ -145,18 +185,19 @@ function success() {
 </div>
 
 
-	<marquee behavior="scroll" direction="right">
-	<img src="pop1.gif" alt="popup">
-	<img src="pop2.gif" alt="popup">
-	<img src="pop3.gif" alt="popup">
-	<img src="pop4.gif" alt="popup">
-	<img src="pop5.gif" alt="popup">
-	<img src="pop6.gif" alt="popup">
-	<img src="pop7.gif" alt="popup">
-	<img src="pop8.gif" alt="popup">
-	<img src="pop9.gif" alt="popup">
-	<img src="pop10.gif" alt="popup">
-	</marquee>
+	<div class="marquee1-tiles" style="position: fixed; bottom: 0px;">
+  <img src="pop1.gif" alt="popup">
+  <img src="pop2.gif" alt="popup">
+  <img src="pop3.gif" alt="popup">
+  <img src="pop4.gif" alt="popup">
+  <img src="pop5.gif" alt="popup">
+  <img src="pop6.gif" alt="popup">
+  <img src="pop7.gif" alt="popup">
+  <img src="pop8.gif" alt="popup">
+  <img src="pop9.gif" alt="popup">
+  <img src="pop10.gif" alt="popup">
+</div>
+
 	
 </body>
 </html>
